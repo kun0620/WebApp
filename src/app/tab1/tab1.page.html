@@ -7,15 +7,47 @@
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
+
+          <ion-card class="welcome-card" (click)="gohtml()" >
+            <ion-img src="/assets/shapes.svg"></ion-img>
+            <ion-card-header>
+
+              <ion-card-title>HTML </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>ภาษาสำหรับสร้าง Web pages</p>
+              <!-- <ion-button shape="round" (click)="tab2go()">Round Button</ion-button> -->
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="welcome-card"(click)="gocss()">
+            <ion-img src="/assets/shapes.svg"></ion-img>
+            <ion-card-header>
+
+              <ion-card-title align="right" >CSS </ion-card-title>
+            </ion-card-header>
+            <ion-card-content >
+              <p align="right">ภาษาสำหรับตกแต่งและออกแบบ Web pages </p>
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="welcome-card"(click)="goqsql()">
+            <ion-img src="/assets/shapes.svg"></ion-img>
+            <ion-card-header>
+
+              <ion-card-title >SQL </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>ภาษาสำหรับการจัดการฐานข้อมูล</p>
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="welcome-card" (click)="gophp()">
+            <ion-img src="/assets/shapes.svg"></ion-img>
+            <ion-card-header>
+
+              <ion-card-title align="right">PHP </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p align="right">ภาษาสำหรับ Web server</p>
+            </ion-card-content>
+          </ion-card>
 
 </ion-content>
