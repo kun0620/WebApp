@@ -6,4 +6,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content><ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of csspage" >
+            <ion-item >
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+</ion-list></ion-content>

@@ -1,22 +1,41 @@
 import { Component } from '@angular/core';
+import { NavController, NavParams } from '@ionic/angular';
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+
 public htmlpage = [
 {
-title: 'test1',
-detail: 'wewewewew',
+title: 'HTML Basic',
+detail: '',
 },
 {
-title: 'test2',
+title: 'HTML Links',
 detail: 'wewewewew',
 }
 ,
 {
-title: 'test3',
+title: 'HTML Headings',
+detail: 'wewewewew',
+}
+,
+{
+title: 'HTML Images',
+detail: 'wewewewew',
+},
+{
+title: 'HTML Tables',
+detail: 'wewewewew',
+},
+{
+title: 'HTML List',
+detail: 'wewewewew',
+},
+{
+title: 'HTML Formatting',
 detail: 'wewewewew',
 }
 ];
