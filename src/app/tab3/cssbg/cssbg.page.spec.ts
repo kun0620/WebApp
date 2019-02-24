@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HtmldetailPage } from './htmldetail.page';
+import { CssbgPage } from './cssbg.page';
 
-describe('HtmldetailPage', () => {
-  let component: HtmldetailPage;
-  let fixture: ComponentFixture<HtmldetailPage>;
+describe('CssbgPage', () => {
+  let component: CssbgPage;
+  let fixture: ComponentFixture<CssbgPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HtmldetailPage ],
+      declarations: [ CssbgPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HtmldetailPage);
+    fixture = TestBed.createComponent(CssbgPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

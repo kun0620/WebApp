@@ -8,8 +8,8 @@
 
 <ion-content>
 <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of htmlpage" >
-            <ion-item (click)="pushPage()">
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of htmlpage">
+            <ion-item [routerLink]="p.url" routerDirection="forward">
               <ion-label>
                 {{p.title}}
               </ion-label>

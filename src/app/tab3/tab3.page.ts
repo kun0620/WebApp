@@ -13,40 +13,42 @@ export class Tab3Page {
   {
   title: 'CSS How to',
   detail: '',
+  url:'/cssht'
   },
   {
   title: 'CSS Colors',
   detail: 'wewewewew',
+  url:'/csscol'
   }
   ,
   {
   title: 'CSS Backgrounds',
-  detail: 'wewewewew',
+  detail: 'wewewewew',url:'/cssbg'
   }
   ,
   {
   title: 'CSS Borders',
-  detail: 'wewewewew',
+  detail: 'wewewewew',url:'/cssbd'
   },
   {
   title: 'CSS Padding',
-  detail: 'wewewewew',
+  detail: 'wewewewew',url:'/csspd'
   },
   {
   title: 'CSS Text',
-  detail: 'wewewewew',
+  detail: 'wewewewew',url:'/csstext'
   },
   {
   title: 'CSS Fonts',
-  detail: 'wewewewew',
+  detail: 'wewewewew',url:'/cssfon'
   },
   {
   title: 'CSS Links',
-  detail: 'wewewewew',
+  detail: 'wewewewew',url:'/csslink'
   },
   {
   title: 'CSS Tables',
-  detail: 'wewewewew',
+  detail: 'wewewewew',url:'/csstable'
   }
   ];
 }
