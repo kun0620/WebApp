@@ -8,6 +8,30 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
+<ion-content *ngFor ="let p of htmlbs">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+
+      <h2>HTML Documents</h2>
+      <hr>
+    <p>HTML ทั้งหมดจะต้องเริ่มต้นด้วยการประกาศ <code class="code">{{p.d}}</code></p>
+
+    <p>   HTML นั้นเริ่มต้นด้วย <code class="code">{{p.hk}}</code> และลงท้ายด้วย <code class="code">{{p.h}}</code></p>
+
+      <p>ส่วนที่มองเห็นได้ของ HTML อยู่ระหว่าง <code class="code">{{p.bk}}</code> และ <code class="code">{{p.b}}</code></p>
+          <h3>Example</h3>
+      <div class="w3-example">
+
+      <div class="w3-code notranslate htmlHigh">
+      <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span> </div>
+      </div>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>

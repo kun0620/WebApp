@@ -4,10 +4,85 @@
 <ion-icon  name="arrow-round-back" color="white"></ion-icon>
 </ion-button>
   </ion-buttons>
-    <ion-title>HTML Link</ion-title>
+    <ion-title>HTML Links</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+<ion-row align-items-center>
+  <ion-col size="1">
 
-<ion-content >
+  </ion-col>
+  <ion-col>
+
+  <p>Link พบได้ทุกหน้าเว็บ Link อนุญาตให้ผู้ใช้คลิกทางจากหน้าหนึ่งไปอีกหน้าหนึ่ง</p>
+<h1 id="top">HTML Links - Hyperlinks</h1>
+
+<p>คุณสามารถคลิกที่ลิงค์และข้ามไปที่หน้าอื่น</p>
+
+<p>เมื่อคุณเลื่อนเมาส์ไปที่ลิงค์ลูกศรของเมาส์จะกลายเป็นรูปอื่นได้</p>
+
+<p>หมายเหตุ: ลิงค์ไม่จำเป็นต้องเป็นข้อความ มันอาจเป็นรูปภาพหรือองค์ประกอบ HTML อื่น ๆ</p>
+<p>ใน HTML ลิงก์จะถูกกำหนดด้วยแท็ก <code class="code">&lt;a&gt;</code>tag:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="<i>url</i>"</span></span><span style="color:mediumblue">&gt;</span></span><i>link text</i><span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<h3>Example</h3>
+<div class="w3-example">
+
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://ionicframework.com"</span></span><span style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+<p>แอตทริบิวต์ href ระบุที่อยู่ปลายทาง (https://ionicframework.com) ของลิงก์</p>
+<p>ข้อความลิงค์เป็นส่วนที่มองเห็นได้ (Visit our HTML tutorial)</p>
+<p>คลิกที่ลิงค์ข้อความจะส่งคุณไปยังที่อยู่ที่ระบุ</p>
+<h1>Local Links</h1>
+<p>ตัวอย่างข้างต้นใช้ URL แบบสมบูรณ์ (ที่อยู่เว็บแบบเต็ม)</p>
+<p>มีการระบุลิงก์ในตัวเครื่อง (ลิงก์ไปยังเว็บไซต์เดียวกัน) ด้วย URL แบบสัมพัทธ์ (ไม่มี https: // www .... )</p>
+
+<h1>Example</h1>
+<div class="w3-example">
+
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="html_Link.html"</span></span><span style="color:mediumblue">&gt;</span></span>HTML Images<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+
+<h1>HTML Links - Image as Link</h1>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="default.asp"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="smiley.gif"</span> alt<span style="color:mediumblue">="HTML tutorial"</span> style<span style="color:mediumblue">="width:42px;height:42px;border:0;"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<h1>HTML Links - Create a Bookmark</h1>
+ใช้เพื่ออนุญาตให้ผู้อ่านข้ามไปยังบางส่วนของเว็บเพจ
+
+บุ๊กมาร์กอาจมีประโยชน์หากหน้าเว็บของคุณยาวมาก
+
+ในการสร้างบุ๊คมาร์คคุณต้องสร้างบุ๊กมาร์กก่อนจากนั้นจึงเพิ่มลิงค์ลงไป
+
+เมื่อคลิกที่ลิงค์หน้าจะเลื่อนไปยังตำแหน่งที่มีบุ๊คมาร์ค
+<h1>Example</h1>
+<p>ก่อนอื่นให้สร้างบุ๊คมาร์คด้วย <code class="code">id</code> attribute:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> id<span style="color:mediumblue">="top"</span></span><span style="color:mediumblue">&gt;</span></span>Top<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<p>จากนั้นเพิ่มลิงก์ไปยังบุ๊คมาร์ค ("Jump to Top") จากภายในหน้าเดียวกัน:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="#C4"</span></span><span style="color:mediumblue">&gt;</span></span>Jump to Top<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<a href="/htmllink#top" align="center">Jump to Top</a>
+</ion-col>
+<ion-col size="1">
+
+</ion-col>
+</ion-row>
 
 </ion-content>
