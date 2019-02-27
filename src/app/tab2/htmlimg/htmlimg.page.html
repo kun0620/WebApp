@@ -14,7 +14,55 @@
 
     </ion-col>
     <ion-col>
+<h1>HTML Images</h1>
+<hr>
+<p>รูปภาพสามารถปรับปรุงการออกแบบและลักษณะที่ปรากฏของเว็บเพจ</p>
+<p>ใน HTML รูปภาพจะถูกกำหนดด้วยแท็ก <code class="w3-codespan">&lt;img&gt;</code> tag.</p>
 
+<p>แท็ก <code class="w3-codespan">&lt;img&gt;</code> นั้นว่างเปล่ามันมีแอตทริบิวต์เท่านั้นและไม่มีแท็กปิด</p>
+
+<p>แอตทริบิวต์ <code class="w3-codespan">src</code> ระบุ URL (ที่อยู่เว็บ) ของภาพ:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="<i>url</i>"</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div></div>
+ <hr>
+ <h1>Image Size - Width and Height</h1>
+ <hr>
+ <p>คุณสามารถใช้ <code class="w3-codespan">style</code> เพื่อระบุความกว้างและความสูงของรูปภาพ</p>
+ <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> alt<span style="color:mediumblue">="Girl in a jacket"</span> style<span style="color:mediumblue">="width:500px;height:600px;"</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+<p>หรือสามารถใช้ <code class="w3-codespan">width</code> และ <code class="w3-codespan">height</code> attributes:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> alt<span style="color:mediumblue">="Girl in a jacket"</span> width<span style="color:mediumblue">="500"</span> height<span style="color:mediumblue">="600"</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<hr>
+<h1>Images in Another Folder</h1>
+<p>ตามเป็นเรื่องปกติที่จะเก็บรูปภาพไว้ในโฟลเดอร์ย่อย จากนั้นคุณจะต้องรวมชื่อโฟลเดอร์ในแอตทริบิวต์<code class="w3-codespan">src</code> attribute:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="/images/html5.gif"</span>
+alt<span style="color:mediumblue">="HTML5 Icon"</span> style<span style="color:mediumblue">="width:128px;height:128px;"</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<h1>Images on Another Server</h1>
+<p>บางเว็บไซต์เก็บภาพของพวกเขาบนเซิร์ฟเวอร์ภาพ</p>
+<p>จริงๆแล้วคุณสามารถเข้าถึงภาพจากที่อยู่เว็บใด ๆ ในโลก:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="https://www.w3schools.com/images/w3schools_green.jpg"</span> alt<span style="color:mediumblue">="W3Schools.com"</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
   </ion-col>
   <ion-col size="1">
 
