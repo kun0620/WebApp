@@ -4,10 +4,55 @@
 <ion-icon  name="arrow-round-back" color="white"></ion-icon>
 </ion-button>
   </ion-buttons>
-    <ion-title>cssht</ion-title>
+    <ion-title>CSS How to</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content >
+  <ion-row align-items-center>
+    <ion-col size="1">
 
+    </ion-col>
+    <ion-col>
+<h1>CSS How To...</h1>
+<p>เมื่อเบราว์เซอร์อ่าน style sheet มันจะจัดรูปแบบเอกสาร HTML ตามข้อมูลใน style sheet.</p>
+<hr>
+<h2>3 วิธีในการแทรก CSS</h2>
+<p>การแทรก style sheet มี 3 วิธี</p>
+<ul class="w3-leftbar w3-border w3-border-green" style="padding-top:8px;padding-bottom:8px">
+<li>External style sheet</li>
+<li>Internal style sheet</li>
+<li>Inline style</li>
+</ul>
+<hr>
+<h2>External Style Sheet</h2>
+<p>ด้วย style sheet ภายนอกคุณสามารถเปลี่ยนรูปลักษณ์ของทั้งเว็บไซต์ได้ด้วยการเปลี่ยนไฟล์เพียงไฟล์เดียว!</p>
+<p>แต่ละหน้าจะต้องมีการอ้างอิงไปยังไฟล์ style sheet ภายนอกภายในองค์ประกอบ &lt;link&gt;
+องค์ประกอบ &lt;link&gt; อยู่ในส่วน &lt;head&gt; </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> type<span style="color:mediumblue">="text/css"</span>
+href<span style="color:mediumblue">="mystyle.css"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<p>style sheet ภายนอกสามารถเขียนได้ในโปรแกรมแก้ไขข้อความใด ๆ ไฟล์ไม่ควรมีแท็ก html ใด ๆ ไฟล์ style sheet ต้องถูกบันทึกด้วยนามสกุล  .css</p>
+<p>นี่คือลักษณะ "mystyle.css"</p>
+<div class="w3-example">
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body <span style="color:black"></span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br></span><span style="color:black"></span><br><br>h1 <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> navy<span style="color:black">;</span></span><br>&nbsp;&nbsp;margin-left<span style="color:mediumblue"><span style="color:black">:</span> 20px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span></div>
+</div>
+<p>หมายเหตุ: อย่าเพิ่มช่องว่างระหว่างค่าคุณสมบัติและหน่วย (margin-left: 20 px;) วิธีที่ถูกต้องคือ: margin-left: 20px;</p>
+<hr>
+<hr>
+<h2>Internal Style Sheet</h2>
+<p>อาจใช้ style sheet ภายในหากหน้าเดียวมี styleที ่ไม่ซ้ำกัน</p>
+<p>style ภายในถูกกำหนดไว้ภายในองค์ประกอบ &lt;style&gt; ภายในส่วน &lt;head&gt; ของหน้า HTML:</p>
+
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 </ion-content>

@@ -58,3 +58,27 @@ border-spacing: 0;
 width: 100%;
 display: table;
 }
+.w3-border-green{
+    border-color: #4CAF50;
+}
+.w3-leftbar {
+    border-left: 6px solid #ccc;
+}
+.w3-border {
+    border: 1px solid #ccc;
+}
+.w3-section, .w3-code {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+}
+.w3-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word;
+}
+.w3-code, .w3-codespan {
+    font-family: Consolas,"courier new";
+    font-size: 16px;
+}
