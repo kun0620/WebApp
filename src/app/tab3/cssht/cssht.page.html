@@ -8,7 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
+<ion-content  *ngFor ="let p of hu">
   <ion-row align-items-center>
     <ion-col size="1">
 
@@ -41,7 +41,7 @@ href<span style="color:mediumblue">="mystyle.css"</span></span><span style="colo
 <p>นี่คือลักษณะ "mystyle.css"</p>
 <div class="w3-example">
 <div class="w3-code notranslate cssHigh"><span style="color:brown">
-body <span style="color:black"></span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br></span><span style="color:black"></span><br><br>h1 <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> navy<span style="color:black">;</span></span><br>&nbsp;&nbsp;margin-left<span style="color:mediumblue"><span style="color:black">:</span> 20px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span></div>
+body <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br><br>h1 <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> navy<span style="color:black">;</span></span><br>&nbsp;&nbsp;margin-left<span style="color:mediumblue"><span style="color:black">:</span> 20px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
 </div>
 <p>หมายเหตุ: อย่าเพิ่มช่องว่างระหว่างค่าคุณสมบัติและหน่วย (margin-left: 20 px;) วิธีที่ถูกต้องคือ: margin-left: 20px;</p>
 <hr>
@@ -49,7 +49,25 @@ body <span style="color:black"></span><span style="color:red"><br>&nbsp;&nbsp;ba
 <h2>Internal Style Sheet</h2>
 <p>อาจใช้ style sheet ภายในหากหน้าเดียวมี styleที ่ไม่ซ้ำกัน</p>
 <p>style ภายในถูกกำหนดไว้ภายในองค์ประกอบ &lt;style&gt; ภายในส่วน &lt;head&gt; ของหน้า HTML:</p>
-
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br>body <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> linen<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br><br>
+h1 <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> maroon<span style="color:black">;</span></span><br>&nbsp;&nbsp;margin-left<span style="color:mediumblue"><span style="color:black">:</span> 40px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> <br>
+</span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<hr>
+<h2>Inline Styles</h2>
+<p>อาจใช้ inline style เพื่อใช้สไตล์ที่เป็นเอกลักษณ์สำหรับองค์ประกอบเดียว</p>
+<p>ในการใช้รูปแบบ inline ให้เพิ่มแอททริบิวสไตล์เพื่อองค์ประกอบที่เกี่ยวข้อง แอตทริบิวต์ลักษณะสามารถมีคุณสมบัติ CSS ใดๆ</p>
+<p>ตัวอย่างด้านล่างแสดงวิธีการเปลี่ยนสีและขอบซ้ายขององค์ประกอบ &lt;h1&gt; </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="color:blue;margin-left:30px;"</span></span><span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<p>style sheet หลายแผ่น
+หากมีการกำหนดคุณสมบัติบางอย่างสำหรับตัวเลือกเดียวกัน (องค์ประกอบ) ใน style sheet ที่ต่างกันจะใช้ค่าจาก style sheet การอ่านล่าสุด</p>
     </ion-col>
     <ion-col size="1">
 
