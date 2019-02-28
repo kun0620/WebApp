@@ -9,44 +9,43 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class Tab5Page implements OnInit {
-  public phppage = [
+  public htmlpage = [
   {
-  title: 'PHP HOME',
+  title: 'HTML Basic',
   detail: '',
+  url:'/phpdat'
   },
   {
-  title: 'PHP Echo / Print',
+  title: 'HTML Links',
   detail: 'wewewewew',
-  },
-  {
-  title: 'PHP Data Types',
-  detail: 'wewewewew',
-  },
-  {
-  title: 'PHP If...Else...Elseif',
-  detail: 'wewewewew',
-  },
-  {
-  title: 'PHP Switch',
-  detail: 'wewewewew',
+  url:'/htmllink'
   }
   ,
   {
-  title: 'PHP While Loops',
+  title: 'HTML Headings',
   detail: 'wewewewew',
+  url:'/htmlhead'
   }
   ,
   {
-  title: 'PHP For Loops',
+  title: 'HTML Images',
   detail: 'wewewewew',
+  url:'/htmlimg'
   },
   {
-  title: 'PHP Form Handling',
+  title: 'HTML Tables',
   detail: 'wewewewew',
+  url:'/htmltable'
   },
   {
-  title: 'PHP Date and Time',
+  title: 'HTML List',
   detail: 'wewewewew',
+  url:'/htmllist'
+  },
+  {
+  title: 'HTML Formatting',
+  detail: 'wewewewew',
+  url:'/htmlfor'
   }
   ];
   constructor() { }

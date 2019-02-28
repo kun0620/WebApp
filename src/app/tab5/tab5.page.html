@@ -1,17 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Totorials PHP</ion-title>
+    <ion-title>
+      Totorials HTML
+   </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-            <ion-menu-toggle auto-hide="false" *ngFor="let p of phppage" >
-              <ion-item >
-                <ion-label>
-                  {{p.title}}
-                </ion-label>
-              </ion-item>
-            </ion-menu-toggle>
-  </ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of htmlpage">
+            <ion-item [routerLink]="p.url" routerDirection="forward">
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+</ion-list>
 </ion-content>

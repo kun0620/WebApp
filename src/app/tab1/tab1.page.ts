@@ -12,7 +12,7 @@ constructor(private router: Router) {
 
 }
 gohtml(){
-  this.router.navigateByUrl('/tabs/tab2');
+  this.router.navigateByUrl('/tabs/tab5');
  }
  gocss(){
    this.router.navigateByUrl('/tabs/tab3');
