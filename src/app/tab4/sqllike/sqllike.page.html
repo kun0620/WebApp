@@ -1,9 +1,34 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>sqllike</ion-title>
+  <ion-toolbar><ion-buttons slot="start"  >
+<ion-button routerLink="/tabs/tab4" routerDirection="back">
+<ion-icon  name="arrow-round-back" color="white"></ion-icon>
+</ion-button>
+  </ion-buttons>
+    <ion-title>CSS Links</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+      <h1>AngularJS Data Binding</h1>
+<hr>การเชื่อมโยงข้อมูลใน AngularJS เป็นการซิงโครไนซ์ระหว่างโมเดลและมุมมอง<hr>
+<h2>Data Model</h2>
+<p>แอปพลิเคชัน AngularJS มักจะมีรูปแบบข้อมูล โมเดลข้อมูลคือชุดของข้อมูลที่มีให้สำหรับแอปพลิเคชัน</p>
+<div class="w3-example">
+    <h3>Example</h3>
+<div class="w3-code notranslate jsHigh"><span style="color:black"><span style="color:red">
+</span>    <span style="color:mediumblue">var</span> app = angular.<span style="color:black">module</span>(<span style="color:brown">'myApp'</span>, []);<br><span style="color:red">
+</span>    app.<span style="color:black">controller</span>(<span style="color:brown">'myCtrl'</span>, <span style="color:mediumblue">function</span>($scope) {{p.k}}<br>&nbsp; $scope.<span style="color:black">firstname</span> <span style="color:red">
+</span>    = <span style="color:brown">"John"</span>;<br>&nbsp;&nbsp;$scope.<span style="color:black">lastname</span> = <span style="color:brown">"Doe"</span>;<br>});<br> </span></div>
+</div>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>

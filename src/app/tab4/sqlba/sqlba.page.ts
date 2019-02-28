@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sqlba.page.scss'],
 })
 export class SqlbaPage implements OnInit {
-
+  public lo =[
+    {k: "{",
+    l: "}",}]
   constructor() { }
 
   ngOnInit() {

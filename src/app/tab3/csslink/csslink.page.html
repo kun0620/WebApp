@@ -4,10 +4,63 @@
 <ion-icon  name="arrow-round-back" color="white"></ion-icon>
 </ion-button>
   </ion-buttons>
-    <ion-title>csslink</ion-title>
+    <ion-title>CSS Links</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+<h1>CSS Links</h1>
+<hr>
+<p class="intro">
+ด้วย CSS, links สามารถจัดรูปแบบได้หลายวิธี</p>
+<a href="javascript:void(0)" class="txtlink2">Text Link</a>
+<a href="javascript:void(0)" class="txtlink">Text Link</a>
+<a href="javascript:void(0)" class="button5">Link Button</a>
+<a href="javascript:void(0)" class="btn">Link Button</a>
+<hr>
+<h1>Styling Links</h1>
+<p>Links สามารถกำหนดสไตล์ด้วยคุณสมบัติ CSS </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+   a <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> hotpink<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+<p>นอกจากนี้ลิงก์ยังสามารถจัดสไตล์ได้แตกต่างกันไปตาม<strong>สถานะ</strong>ของลิงค์ </p>
+<p>สถานะการเชื่อมโยงสี่สถานะคือ:</p>
+<ul>
+<li><code class="w3-codespan">a:link</code> - ลิงค์ปกติที่ไม่เคยเข้าชม</li>
+<li><code class="w3-codespan">a:visited</code> - ลิงค์ที่ผู้ใช้เข้าชม</li>
+<li><code class="w3-codespan">a:hover</code> - ลิงก์เมื่อผู้ใช้เลื่อนเมาส์ไว้เหนือมัน</li>
+<li><code class="w3-codespan">a:active</code> - ลิงค์ทันทีที่มีการคลิก</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+<span style="color:green">/* ลิงค์ปกติที่ไม่เคยเข้าชม */</span><br>a:link <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br><br><span style="color:green">
+  /* ลิงค์ที่ผู้ใช้เข้าชม */</span><br>a:visited <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> green<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br><br><span style="color:green">/* ลิงก์เมื่อผู้ใช้เลื่อนเมาส์ไว้เหนือมัน */</span><br>
+a:hover <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> hotpink<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br><br><span style="color:green">/* ลิงค์ทันทีที่มีการคลิก */</span><br>a:active <span style="color:black">{{p.k}}</span><span style="color:red"><br>
+  &nbsp;
+color<span style="color:mediumblue"><span style="color:black">:</span> blue<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+<hr>
+<h1>Advanced - Link Buttons</h1>
+<p>ตัวอย่างนี้แสดงตัวอย่างขั้นสูงเพิ่มเติมที่เรารวมคุณสมบัติ CSS หลายอย่างเพื่อแสดงลิงก์เป็นกล่อง / ปุ่ม:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+a:link, a:visited <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> #f44336<span style="color:black">;</span></span><br>&nbsp;
+color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>&nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 14px 25px<span style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span> <br>&nbsp;&nbsp;text-decoration<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span><br>&nbsp;&nbsp;display<span style="color:mediumblue"><span style="color:black">:</span> inline-block<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br><br>a:hover, a:active <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+<a href="javascript:void(0)" class="gh">Link Button</a>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>

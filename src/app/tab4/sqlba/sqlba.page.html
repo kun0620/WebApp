@@ -1,9 +1,53 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>sqlba</ion-title>
+  <ion-toolbar><ion-buttons slot="start"  >
+<ion-button routerLink="/tabs/tab4" routerDirection="back">
+<ion-icon  name="arrow-round-back" color="white"></ion-icon>
+</ion-button>
+  </ion-buttons>
+    <ion-title>AngularJS Tutorial</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+<h1>AngularJS Tutorial</h1>
+<hr>
+
+
+<p>ก่อนอื่นคุณจะได้เรียนรู้พื้นฐานของ AngularJS: directives, expressions, filters, modules, and controllers.</p>
+<p>จากนั้นคุณจะได้เรียนรู้ทุกสิ่งที่คุณต้องรู้เกี่ยวกับ AngularJS:</p>
+<p>Events, DOM, Forms, Input, Validation, Http, and more.</p>
+<hr>
+<div class="w3-example">
+<h3>AngularJS Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:red"> lang<span style="color:mediumblue">="en-US"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:black"></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> ng-app<span style="color:mediumblue">=""</span></span><span style="color:mediumblue">&gt;</span></span><br>
+&nbsp;    <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Name : <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> ng-model<span style="color:mediumblue">="name"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+&nbsp;    <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>Hello <span style="color:red">{{name}}</span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<hr>
+<p>สิ่งที่คุณควรรู้
+ก่อนที่คุณจะศึกษา AngularJS คุณควรมีความเข้าใจพื้นฐานดังนี้</p>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>

@@ -75,10 +75,116 @@ display: table;
     width: auto;
     background-color: #fff;
     padding: 8px 12px;
-    border-left: 4px solid #4CAF50;
+    border: 4px solid DodgerBlue;
+
     word-wrap: break-word;
 }
 .w3-code, .w3-codespan {
     font-family: Consolas,"courier new";
     font-size: 16px;
+}
+.w3-center {
+    text-align: center!important;
+}
+
+.w3-col.m6, .w3-half {
+    width: 49.99999%;
+}
+.w3-padding {
+    padding: 8px 16px!important;
+}
+.w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+    float: left;
+}
+.w3-container:after, .w3-container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .w3-row-padding:after, .w3-row-padding:before, .w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+
+    background-color: #f1f1f1!important;
+}
+.w3-responsive {
+    display: block;
+    overflow-x: auto;
+}
+table.w3-table-all {
+    margin: 20px 0;
+}
+.w3-note {
+    background-color: #ffffcc;
+    border-left: 6px solid #ffeb3b;
+}
+.w3-panel {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.w3-border-red {
+    border-color: #f44336;
+}
+.w3-border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+}
+.w3-round-xlarge {
+    border-radius: 16px;
+}
+.w3-border-blue, .w3-hover-border-blue:hover {
+    border-color: #2196F3!important;
+}
+.w3-pale-blue, .w3-hover-pale-blue:hover {
+    color: #000!important;
+    background-color: #ddffff!important;
+}
+.w3-leftbar {
+    border-left: 6px solid #ccc!important;
+}
+.w3-theme-border {
+    border-color: #4CAF50 !important;
+}
+a {
+    color: inherit;
+}
+.txtlink {
+    color: green;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.btn {
+    display: inline-block;
+    background-color: #f44336;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    opacity: 0.9;
+}
+a:link.gh, a:visited.gh {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover.gh, a:active.gh {
+  background-color: red;
 }

@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./csstext.page.scss'],
 })
 export class CsstextPage implements OnInit {
-
+  public lo =[
+    {k: "{",
+    l: "}",}]
   constructor() { }
 
   ngOnInit() {

@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sqldel.page.scss'],
 })
 export class SqldelPage implements OnInit {
-
+  public lo =[
+    {k: "{",
+    l: "}",}]
   constructor() { }
 
   ngOnInit() {

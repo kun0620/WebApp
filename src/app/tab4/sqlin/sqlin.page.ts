@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sqlin.page.scss'],
 })
 export class SqlinPage implements OnInit {
+  public lo =[
+    {k: "{",
+    l: "}",
+    n: "[",
+    m: "]"
 
+  }]
   constructor() { }
 
   ngOnInit() {

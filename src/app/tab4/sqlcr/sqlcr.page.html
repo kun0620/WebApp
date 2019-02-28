@@ -1,9 +1,62 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>sqlcr</ion-title>
+  <ion-toolbar><ion-buttons slot="start"  >
+<ion-button routerLink="/tabs/tab4" routerDirection="back">
+<ion-icon  name="arrow-round-back" color="white"></ion-icon>
+</ion-button>
+  </ion-buttons>
+    <ion-title>AngularJS Controllers</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+<h1>AngularJS Controllers</h1>
+<p>
+แอปพลิเคชัน AngularJS ควบคุมโดย controllers</p>
+<p>คำสั่ง <strong>ng-controller</strong>
+กำหนดแอพพลิเคชั่น controller. </p>
+<p>controller เป็นวัตถุ <strong>JavaScript Object</strong>โดยตัวสร้างวัตถุ standard JavaScript <strong>object constructor.</strong>.</p>
+<div class="w3-example">
+ <h3>AngularJS Example</h3>
+<div class="w3-code notranslate htmlHigh">
+    <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> ng-app<span style="color:mediumblue">="myApp"</span> ng-controller<span style="color:mediumblue">="myCtrl"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+    <br>First Name: <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> ng-model<span style="color:mediumblue">="firstName"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>
+    Last Name: <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> ng-model<span style="color:mediumblue">="lastName"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>
+    Full Name: <span style="color:red">{{firstName + " " + lastName}}</span><br>
+    <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:mediumblue">var</span> app = angular.<span style="color:black">module</span>(<span style="color:brown">'myApp'</span>, <span style="color:red">
+</span>    {{p.n}}{{p.m}});<br>app.<span style="color:black">controller</span>(<span style="color:brown">'myCtrl'</span>, <span style="color:mediumblue">function</span>($scope) {{p.k}}<br>&nbsp; $scope.<span style="color:black">firstName</span> <span style="color:red">
+</span>    = <span style="color:brown">"John"</span>;<br>&nbsp;&nbsp;$scope.<span style="color:black">lastName</span> = <span style="color:brown">"Doe"</span>;<br>{{p.l}});<br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<hr><hr>
+<h2>Controller Methods</h2>
+<p>ตัวอย่างข้างต้นแสดงให้เห็นถึงวัตถุตัวควบคุมที่มีคุณสมบัติสองประการ: lastName และfirstName</p>
+<!-- <p>A controller can also have methods (variables as functions):</p> -->
+<!-- <div class="w3-example">
+<h3>AngularJS Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> ng-app<span style="color:mediumblue">="myApp"</span> ng-controller<span style="color:mediumblue">="personCtrl"</span></span><span style="color:mediumblue">&gt;</span></span><br><br>
+First Name: <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> ng-model<span style="color:mediumblue">="firstName"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>
+Last Name: <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> ng-model<span style="color:mediumblue">="lastName"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>
+Full Name: <span style="color:red">{{p.k}}{{p.k}}fullName(){{p.l}}{{p.l}}</span><br><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:mediumblue">var</span> app = angular.<span style="color:black">module</span>(<span style="color:brown">'myApp'</span>, {{p.n}}{{p.m}});<br>app.<span style="color:black">controller</span>(<span style="color:brown">'personCtrl'</span>, <span style="color:red">
+</span> <span style="color:mediumblue">function</span>($scope) {{p.k}}<br><span style="color:red">
+</span>  &nbsp; $scope.<span style="color:black">firstName</span> = <span style="color:brown">"John"</span>;<br>&nbsp;&nbsp;$scope.<span style="color:black">lastName</span> <span style="color:red">
+</span> = <span style="color:brown">"Doe"</span>;<br>&nbsp;&nbsp;$scope.<span style="color:black">fullName</span> = <span style="color:mediumblue">function</span>() {{p.k}}<br>&nbsp;&nbsp;&nbsp; <span style="color:red">
+</span> <span style="color:mediumblue">return</span> $scope.<span style="color:black">firstName</span> + <span style="color:brown">" "</span> + $scope.<span style="color:black">lastName</span>;<br>&nbsp;&nbsp;{{.l}};<br>{{.l}});<br>
+</span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div> -->
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>

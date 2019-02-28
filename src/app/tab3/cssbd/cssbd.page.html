@@ -4,10 +4,144 @@
 <ion-icon  name="arrow-round-back" color="white"></ion-icon>
 </ion-button>
   </ion-buttons>
-    <ion-title>cssbd</ion-title>
+    <ion-title>CSS Borders</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content  *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
 
+    </ion-col>
+    <ion-col>
+      <h1>CSS Borders</h1>
+      <hr>
+      <p>คุณสมบัติ CSS <code class="w3-codespan">border</code> อนุญาตให้คุณระบุสไตล์ความกว้างและสีของเส้นขอบขององค์ประกอบ</p>
+      <div class="w3-container w3-border w3-border-black w3-margin-top">
+      <p>I have borders on all sides.</p>
+      </div>
+      <br>
+      <div class="w3-container w3-border-bottom w3-border-red" >
+<p>I have a  bottom border.</p>
+</div>
+<br>
+<div class="w3-container w3-border w3-round-xlarge">
+<p>I have rounded borders.</p>
+</div>
+<br>
+<div class="w3-container w3-pale-blue w3-leftbar w3-border-blue">
+<p>I have a blue left border.</p>
+</div>
+<hr>
+<h2>Border Style</h2>
+<p>คุณสมบัติ <code class="w3-codespan">border-style</code>ระบุชนิดของเส้นขอบที่จะแสดง</p>
+<p>อนุญาตให้ใช้ค่าต่อไปนี้:</p>
+<ul>
+<li><code class="w3-codespan">dotted</code> - กำหนดเส้นประ</li>
+<li><code class="w3-codespan">dashed</code> - กำหนดขอบประ</li>
+<li><code class="w3-codespan">solid</code> - กำหนดเส้นขอบทึบ</li>
+<li><code class="w3-codespan">double</code> - กำหนดเส้นขอบคู่</li>
+<li><code class="w3-codespan">groove</code> - กำหนดเส้นขอบร่อง 3D ผลกระทบขึ้นอยู่กับค่าสีของเส้นขอบ</li>
+<li><code class="w3-codespan">ridge</code> - กำหนดเส้นขอบเป็นแนว 3 มิติ ผลกระทบขึ้นอยู่กับค่าสีของเส้นขอบ</li>
+<li><code class="w3-codespan">inset</code> - กำหนดเส้นขอบแทรก 3D ผลกระทบขึ้นอยู่กับค่าสีของเส้นขอบ</li>
+<li><code class="w3-codespan">outset</code> - กำหนดเส้นขอบ outset 3D ผลกระทบขึ้นอยู่กับค่าสีของเส้นขอบ</li>
+<li><code class="w3-codespan">none</code> - กำหนดไม่มีขอบ</li>
+<li><code class="w3-codespan">hidden</code> - กำหนดเส้นขอบที่ซ่อนอยู่</li>
+</ul>
+<p>
+คุณสมบัติ <code class="w3-codespan">border-style</code> สามารถมีได้ตั้งแต่หนึ่งถึงสี่ค่า (สำหรับขอบด้านบน, ขอบด้านขวา, ขอบด้านล่างและขอบด้านซ้าย)</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+p.dotted <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> dotted<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.dashed <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> dashed<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.solid <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.double <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> double<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.groove <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> groove<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.ridge <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> ridge<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.inset <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> inset<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.outset <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> outset<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.none <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.hidden <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> hidden<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span><br>
+p.mix <span style="color:black">{{p.k}}</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> dotted dashed solid double<span style="color:black">;</span></span></span><span style="color:black">{{p.l}}</span> </span></div>
+<p>Result:</p>
+<div class="w3-white w3-padding notranslate">
+<p style="border-style: dotted;">A dotted border.</p>
+<p style="border-style: dashed;">A dashed border.</p>
+<p style="border-style: solid;">A solid border.</p>
+<p style="border-style: double;">A double border.</p>
+<p style="border-style: groove;">A groove border. The effect depends on the border-color value.</p>
+<p style="border-style: ridge;">A ridge border. The effect depends on the border-color value.</p>
+<p style="border-style: inset;">An inset border. The effect depends on the border-color value.</p>
+<p style="border-style: outset;">An outset border. The effect depends on the border-color value.</p>
+<p style="border-style: none;">No border.</p>
+<p style="border-style: hidden;">A hidden border.</p>
+<p style="border-style: dotted dashed solid double;">A mixed border.</p>
+</div>
+</div>
+<hr><hr>
+<h2>Border Width</h2>
+<p>
+คุณสมบัติ <code class="w3-codespan">border-width</code> ระบุความกว้างของเส้นขอบทั้งสี่</p>
+<p>ความกว้างสามารถตั้งค่าเป็นขนาดเฉพาะ (เป็น px, pt, cm, em, ฯลฯ ) หรือโดยใช้หนึ่งในสามค่าที่กำหนดไว้ล่วงหน้า: thin, Medium หรือ thick</p>
+<p>คุณสมบัติ <code class="w3-codespan">border-width</code>สามารถมีได้ตั้งแต่หนึ่งถึงสี่ค่า (สำหรับขอบด้านบน, ขอบด้านขวา, ขอบด้านล่างและขอบด้านซ้าย)</p>
+<div style="border:5px solid black;padding:8px;">5px border-width</div>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+p.one
+<span style="color:black">{{p.k}}</span><span style="color:red"><br>
+  &nbsp;
+border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+  &nbsp;
+border-width<span style="color:mediumblue"><span style="color:black">:</span> 5px<span style="color:black">;</span></span><br>
+</span><span style="color:black">{{p.l}}</span><br><br>
+p.two
+<span style="color:black">{{p.k}}</span><span style="color:red"><br>
+  &nbsp;
+border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;border-width<span style="color:mediumblue"><span style="color:black">:</span> medium<span style="color:black">;</span></span><br>
+</span><span style="color:black">{{p.l}}</span><br><br>p.three
+<span style="color:black">{{p.k}}</span><span style="color:red"><br>
+  &nbsp;
+border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;border-width<span style="color:mediumblue"><span style="color:black">:</span> 2px 10px 4px 20px<span style="color:black">;</span></span><br>
+</span><span style="color:black">{{p.l}}</span>
+ </span></div>
+</div>
+<hr>
+<h2>Border Color</h2>
+<p>
+คุณสมบัติ <code class="w3-codespan">border-color</code> ใช้เพื่อตั้งค่าสีของเส้นขอบทั้ง 4</p>
+<p>สีสามารถตั้งค่าโดย:</p>
+<ul>
+<li>name - specify a color name, like "red"</li>
+<li>Hex - specify a hex value, like "#ff0000"</li>
+<li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+<li>transparent</li>
+</ul>
+<p>คุณสมบัติ <code class="w3-codespan">border-color</code> สามารถมีได้ตั้งแต่หนึ่งถึงสี่ค่า (สำหรับขอบด้านบน, ขอบด้านขวา, ขอบด้านล่างและขอบด้านซ้าย).&nbsp;</p>
+<div style="border:5px solid red;padding:8px;">Red border</div>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+p.one
+<span style="color:black">{{p.k}}</span><span style="color:red"><br>
+  &nbsp;
+border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+  &nbsp;
+border-color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+</span><span style="color:black">{{p.l}}</span><br><br>
+p.two
+<span style="color:black">{{p.k}}</span><span style="color:red"><br>
+  &nbsp;
+border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;border-color<span style="color:mediumblue"><span style="color:black">:</span> green<span style="color:black">;</span></span><br>
+</span><span style="color:black">{{p.l}}</span><br><br>p.three <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>&nbsp;&nbsp;border-color<span style="color:mediumblue"><span style="color:black">:</span> red green blue yellow<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 </ion-content>

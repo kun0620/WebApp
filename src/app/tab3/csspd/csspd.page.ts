@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./csspd.page.scss'],
 })
 export class CsspdPage implements OnInit {
-
+  public lo =[
+    {k: "{",
+    l: "}",}]
   constructor() { }
 
   ngOnInit() {

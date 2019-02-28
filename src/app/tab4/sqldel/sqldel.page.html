@@ -1,9 +1,24 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>sqldel</ion-title>
+  <ion-toolbar><ion-buttons slot="start"  >
+<ion-button routerLink="/tabs/tab4" routerDirection="back">
+<ion-icon  name="arrow-round-back" color="white"></ion-icon>
+</ion-button>
+  </ion-buttons>
+    <ion-title>CSS Links</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>

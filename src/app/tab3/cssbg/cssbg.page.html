@@ -4,10 +4,102 @@
 <ion-icon  name="arrow-round-back" color="white"></ion-icon>
 </ion-button>
   </ion-buttons>
-    <ion-title>cssbg</ion-title>
+    <ion-title>CSS Backgrounds</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content  *ngFor ="let p of hu">
+  <ion-row align-items-center>
+    <ion-col size="1">
 
+    </ion-col>
+    <ion-col>
+้<h1>CSS Backgrounds</h1>
+<div style="width:100%;border:1px solid gray;padding:8px;background:#e1efbb url('/assets/mountain.jpg')">
+<p style="margin-right:150px;">คุณสมบัติ CSS background ใช้เพื่อกำหนดเอฟเฟกต์พื้นหลังสำหรับองค์ประกอบ
+
+คุณสมบัติ CSS background :</p>
+<p>CSS background properties:</p>
+<ul>
+  <li>background-color</li>
+  <li>background-image</li>
+  <li>background-repeat</li>
+  <li>background-attachment</li>
+  <li>background-position</li>
+</ul>
+</div>
+<hr>
+<h2>Background Color</h2>
+<p>
+คุณสมบัติ <code class="w3-codespan">background-color</code> ระบุสีพื้นหลังขององค์ประกอบ</p>
+<p>สีพื้นหลังของหน้าถูกตั้งค่าดังนี้:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span>
+ </span></div>
+</div>
+<hr>
+<h2>Background Image</h2>
+<p>คุณสมบัติ <code class="w3-codespan">background-image</code> ระบุภาพที่จะใช้เป็นพื้นหลังขององค์ประกอบ</p>
+<p>โดยค่าเริ่มต้นรูปภาพจะถูกทำซ้ำเพื่อให้ครอบคลุมองค์ประกอบทั้งหมด</p>
+<p>ภาพพื้นหลังสำหรับหน้าสามารถตั้งค่าดังนี้:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;background-image<span style="color:mediumblue"><span style="color:black">:</span> url("paper.gif")<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+<hr>
+<h2>Background Image - Repeat</h2>
+<p>หากภาพถูกทำซ้ำในแนวนอน (<code class="w3-codespan">background-repeat: repeat-x;</code>), พื้นหลังจะดูดีขึ้น:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body
+<span style="color:black">{{p.k}}</span><span style="color:red"><br>
+&nbsp;&nbsp;background-image<span style="color:mediumblue"><span style="color:black">:</span> url("gradient_bg.png")<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;background-repeat<span style="color:mediumblue"><span style="color:black">:</span> repeat-x<span style="color:black">;</span></span><br>
+</span><span style="color:black">{{p.l}}</span>
+ </span></div>
+</div>
+<div class="w3-panel w3-note">
+  <p><b>Tip:</b> ในการทำซ้ำภาพในแนวตั้งให้ตั้งค่าพื้นหลังซ้ำ: <code class="w3-codespan">background-repeat: repeat-y;</code></p>
+</div>
+<h2>Background Image - Set position and no-repeat</h2>
+<p>รูปภาพพื้นหลังจะแสดงในตำแหน่งเดียวกับข้อความ เราต้องการเปลี่ยนตำแหน่งของภาพเพื่อไม่ให้รบกวนข้อความมากเกินไป</p>
+<p>ตำแหน่งของภาพถูกระบุโดยคุณสมบัติ <code class="w3-codespan">background-position</code> </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body
+<span style="color:black">{{p.k}}</span><span style="color:red"><br>
+  &nbsp;
+background-image<span style="color:mediumblue"><span style="color:black">:</span> url("img_tree.png")<span style="color:black">;</span></span><br>
+  &nbsp;
+background-repeat<span style="color:mediumblue"><span style="color:black">:</span> no-repeat<span style="color:black">;</span></span><br>
+  &nbsp;
+background-position<span style="color:mediumblue"><span style="color:black">:</span> right top<span style="color:black">;</span></span><br>
+</span><span style="color:black">{{p.l}}</span>
+ </span></div>
+</div>
+<hr>
+<h2>Background Image - Fixed position</h2>
+<p></p>
+<p>ในการระบุว่า background image ควรได้รับการแก้ไข (จะไม่เลื่อนไปกับส่วนที่เหลือของหน้า) ให้ใช้คุณสมบัติการแนบภาพพื้นหลัง: <code class="w3-codespan">background-attachment</code> </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body
+<span style="color:black">{{p.k}}</span><span style="color:red"><br>
+&nbsp;&nbsp;background-image<span style="color:mediumblue"><span style="color:black">:</span> url("img_tree.png")<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;background-repeat<span style="color:mediumblue"><span style="color:black">:</span> no-repeat<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;background-position<span style="color:mediumblue"><span style="color:black">:</span> right top<span style="color:black">;</span></span><br>
+  &nbsp; background-attachment<span style="color:mediumblue"><span style="color:black">:</span> fixed<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span>
+ </span></div>
+</div>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 </ion-content>

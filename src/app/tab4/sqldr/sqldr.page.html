@@ -1,9 +1,41 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>sqldr</ion-title>
+  <ion-toolbar><ion-buttons slot="start"  >
+<ion-button routerLink="/tabs/tab4" routerDirection="back">
+<ion-icon  name="arrow-round-back" color="white"></ion-icon>
+</ion-button>
+  </ion-buttons>
+    <ion-title>AngularJS Modules</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+<h1>AngularJS Modules</h1>
+<p>โมดูล AngularJS กำหนดแอปพลิเคชัน</p>
+<p>
+โมดูลเป็นคอนเทนเนอร์สำหรับส่วนต่าง ๆ ของแอปพลิเคชัน</p>
+
+<p>โมดูลเป็นคอนเทนเนอร์สำหรับตัวควบคุมแอปพลิเคชัน</p>
+
+<p>ตัวควบคุมอยู่ในโมดูลเสมอ</p>
+<hr>
+<h2>Creating a Module</h2>
+<p>โมดูลถูกสร้างขึ้นโดยใช้ฟังก์ชัน AngularJS <code class="w3-codespan">angular.module</code></p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+    <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> ng-app<span style="color:mediumblue">="myApp"</span></span><span style="color:mediumblue">&gt;</span></span>...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:red">
+
+</span>    <br><span style="color:mediumblue">var</span> app = angular.<span style="color:black">module</span>(<span style="color:brown">"myApp"</span>, []);<span style="color:red">
+</span>    <br><br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span> </div>
+</div>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>

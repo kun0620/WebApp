@@ -1,9 +1,39 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>sqlins</ion-title>
+  <ion-toolbar><ion-buttons slot="start"  >
+<ion-button routerLink="/tabs/tab4" routerDirection="back">
+<ion-icon  name="arrow-round-back" color="white"></ion-icon>
+</ion-button>
+  </ion-buttons>
+    <ion-title>AngularJS Directives</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+<h1>AngularJS Directives</h1>
+<hr>
+<p>คำสั่ง AngularJS เป็นคุณสมบัติ HTML แบบขยายพร้อมคำนำหน้า <code class="w3-codespan">ng-</code>.</p>
+<p>คำสั่ง <code class="w3-codespan">ng-app</code> เริ่มต้นแอปพลิเคชัน  AngularJS </p>
+<p>คำสั่ง <code class="w3-codespan">ng-init</code> เริ่มต้นข้อมูลแอปพลิเคชัน</p>
+<p>คำสั่ง <code class="w3-codespan">ng-model</code> ผูกค่าของตัวควบคุม
+(input, select, textarea) กับข้อมูลแอปพลิเคชัน</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> ng-app<span style="color:mediumblue">=""</span> ng-init<span style="color:mediumblue">="firstName='John'"</span></span><span style="color:mediumblue">&gt;</span></span><br><br>
+    <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Name: <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> ng-model<span style="color:mediumblue">="firstName"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+    <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>You wrote: <span style="color:red">{{p.k}}{{p.k}} firstName {{p.l}}{{p.l}}</span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>

@@ -8,55 +8,51 @@ import { Component, OnInit } from '@angular/core';
 export class Tab4Page implements OnInit {
   public sqlpage = [
   {
-  title: 'SQL Intro',
-  detail: '',
+  title: 'AngularJS HOME',
+  detail: '',url:'/sqlba'
   },
   {
-  title: 'SQL Create DB',
-  detail: 'wewewewew',
+  title: 'AngularJS Controllers',
+  detail: 'wewewewew',url:'/sqlcr'
   },
   {
-  title: 'SQL Drop DB',
-  detail: 'wewewewew',
+  title: 'AngularJS Modules',
+  detail: 'wewewewew',url:'/sqldr'
   },
   {
-  title: 'SQL Backup DB',
-  detail: 'wewewewew',
+  title: 'AngularJS Directives',
+  detail: 'wewewewew',url:'/sqlin'
   },
   {
-  title: 'SQL Select',
-  detail: 'wewewewew',
+  title: 'AngularJS Data Binding',
+  detail: 'wewewewew',url:'/sqllike'
   }
-  ,
-  {
-  title: 'SQL Where',
-  detail: 'wewewewew',
-  }
-  ,
-  {
-  title: 'SQL And, Or, Not',
-  detail: 'wewewewew',
-  },
-  {
-  title: 'SQL Order By',
-  detail: 'wewewewew',
-  },
-  {
-  title: 'SQL Insert Into',
-  detail: 'wewewewew',
-  },
-  {
-  title: 'SQL Update',
-  detail: 'wewewewew',
-  },
-  {
-  title: 'SQL Delete',
-  detail: 'wewewewew',
-  },
-  {
-  title: 'SQL Like',
-  detail: 'wewewewew',
-  }
+
+  // ,
+  // {
+  // title: 'SQL And, Or, Not',
+  // detail: 'wewewewew',url:'/sql'
+  // },
+  // {
+  // title: 'SQL Order By',
+  // detail: 'wewewewew',url:'/csspd'
+  // },
+  // {
+  // title: 'SQL Insert Into',
+  // detail: 'wewewewew',url:'/csspd'
+  // },
+  // {
+  // title: 'SQL Update',
+  // detail: 'wewewewew',url:'/csspd'
+  // },
+  // {
+  // title: 'SQL Delete',
+  // detail: 'wewewewew',url:'/csspd'
+  // },
+  // {
+  // title: 'SQL Like',
+  // detail: 'wewewewew',url:'/csspd'
+  // }
   ];
   constructor() { }
 

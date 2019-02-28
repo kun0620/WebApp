@@ -4,10 +4,44 @@
 <ion-icon  name="arrow-round-back" color="white"></ion-icon>
 </ion-button>
   </ion-buttons>
-    <ion-title>cssfon</ion-title>
+    <ion-title>CSS Fonts</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+    <h1>CSS Fonts</h1>
+    <hr>
+    <p class="intro">
+คุณสมบัติ CSS font กำหนดตระกูลแบบอักษรความหนาขนาดและรูปแบบของข้อความ</p>
+<hr>
+<h2>Font Style</h2>
+<p>คุณสมบัติ <code class="w3-codespan">font-style</code> จะใช้เพื่อระบุข้อความ</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+p.normal <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;font-style<span style="color:mediumblue"><span style="color:black">:</span> normal<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br>
+<br>p.italic <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;font-style<span style="color:mediumblue"><span style="color:black">:</span> italic<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br>
+<br>p.oblique <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp; font-style<span style="color:mediumblue"><span style="color:black">:</span> oblique<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div><hr>
+<h2>Set Font Size With Pixels</h2>
+<p>
+การตั้งค่าขนาดข้อความด้วยพิกเซลช่วยให้คุณควบคุมขนาดข้อความได้อย่างสมบูรณ์:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+h1 <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;font-size<span style="color:mediumblue"><span style="color:black">:</span> 40px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br>
+<br>h2 <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;font-size<span style="color:mediumblue"><span style="color:black">:</span> 30px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span><br>
+<br>p <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;&nbsp;font-size<span style="color:mediumblue"><span style="color:black">:</span> 14px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>

@@ -46,9 +46,6 @@ export class Tab3Page {
   title: 'CSS Links',
   detail: 'wewewewew',url:'/csslink'
   },
-  {
-  title: 'CSS Tables',
-  detail: 'wewewewew',url:'/csstable'
-  }
+  
   ];
 }

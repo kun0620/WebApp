@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cssbg.page.scss'],
 })
 export class CssbgPage implements OnInit {
-
+  public hu =[
+    {k: "{",
+    l: "}",}]
   constructor() { }
 
   ngOnInit() {

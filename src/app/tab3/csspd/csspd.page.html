@@ -4,10 +4,100 @@
 <ion-icon  name="arrow-round-back" color="white"></ion-icon>
 </ion-button>
   </ion-buttons>
-    <ion-title>csspd</ion-title>
+    <ion-title>CSS Padding</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content *ngFor ="let p of lo">
+  <ion-row align-items-center>
+    <ion-col size="1">
+
+    </ion-col>
+    <ion-col>
+<h1>CSS Padding</h1>
+<div class="w3-theme-border" style="width:100%;padding:70px;border-width:1px;border-style:solid;">
+องค์ประกอบนี้มี padding of 70px.
+</div>
+<hr>
+<h2>CSS Padding</h2>
+<p>คุณสมบัติ CSS <code class="w3-codespan">padding</code> ใช้เพื่อสร้างพื้นที่รอบ ๆ เนื้อหาขององค์ประกอบภายในขอบเขตที่กำหนด</p>
+<p>ด้วย CSS คุณสามารถควบคุมการขยายได้อย่างสมบูรณ์ มีคุณสมบัติสำหรับการตั้งค่าการเติมสำหรับแต่ละด้านขององค์ประกอบ (ด้านบนขวาล่างและซ้าย)</p>
+<hr>
+<h2>Padding - Individual Sides</h2>
+<p>CSS มีคุณสมบัติในการระบุการเติมสำหรับแต่ละด้านขององค์ประกอบ</p>
+<ul>
+<li><code class="w3-codespan">padding-top</code></li>
+<li><code class="w3-codespan">padding-right</code></li>
+<li><code class="w3-codespan">padding-bottom</code></li>
+<li><code class="w3-codespan">padding-left</code></li>
+</ul>
+<p>คุณสมบัติ padding ทั้งหมดสามารถมีค่าต่อไปนี้:</p>
+<ul>
+<li><em>length</em> - ระบุการเติมเต็มใน px, pt, cm, ฯลฯ</li>
+<li><em>%</em> - ระบุการเติม % ของความกว้างขององค์ประกอบที่มี</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+  div <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;
+padding-top<span style="color:mediumblue"><span style="color:black">:</span> 50px<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;padding-right<span style="color:mediumblue"><span style="color:black">:</span> 30px<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;padding-bottom<span style="color:mediumblue"><span style="color:black">:</span> 50px<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;padding-left<span style="color:mediumblue"><span style="color:black">:</span> 80px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+<p>หากคุณสมบัต <code class="w3-codespan">padding</code> มี 4 ค่า:</p>
+<ul>
+<li><b>padding: 25px 50px 75px 100px; </b>
+<ul><li>top padding is 25px</li>
+<li>right padding is 50px</li>
+<li>bottom padding is 75px</li>
+<li>left padding is 100px</li></ul>
+</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+  div <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;
+  padding<span style="color:mediumblue"><span style="color:black">:</span> 25px 50px 75px 100px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+<ul>
+<li><b>padding: 25px 50px 75px;</b><ul>
+<li>top padding is 25px</li>
+<li>right and left paddings are 50px</li>
+<li>bottom padding is 75px</li></ul>
+</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+  div <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;
+  padding<span style="color:mediumblue"><span style="color:black">:</span> 25px 50px 75px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+<ul>
+<li><b>padding: 25px 50px;</b><ul><li>top and bottom paddings are 25px</li>
+<li>right and left paddings are 50px</li></ul>
+</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+  div <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;
+  padding<span style="color:mediumblue"><span style="color:black">:</span> 25px 50px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+<ul>
+<li><b>padding: 25px;</b><ul><li>all four paddings are 25px</li></ul>
+</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+  div <span style="color:black">{{p.k}}</span><span style="color:red"><br>&nbsp;
+  padding<span style="color:mediumblue"><span style="color:black">:</span> 25px<span style="color:black">;</span></span><br></span><span style="color:black">{{p.l}}</span> </span></div>
+</div>
+    </ion-col>
+    <ion-col size="1">
+
+    </ion-col>
+  </ion-row>
 
 </ion-content>
